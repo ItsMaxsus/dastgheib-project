@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dastgheib</title>
+
+    </head>
+
+    <style>
+body{
+    background-color: gray;
+}
+#div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+#ccC{
+
+    text-shadow:
+    -1px -1px 0 rgb(255, 255, 255),
+     1px -1px 0 rgb(255, 255, 255),
+    -1px  1px 0 rgb(255, 255, 255),
+     1px  1px 0 rgb(255, 255, 255);
+}
+
+
+#btn1{
+    margin-top: 20px;
+}
+
+    </style>
+
+    <body id="body">
+        <div id="div1">
+                    <h1 id="ccC">Enter the Password</h1>
+                    <input id="inpt1">
+        <button id="btn1">Enter The Password</button>
+
+</div>
+
+
+    <script>
+        let btn1 =
+        document.getElementById("btn1");
+        let cC = 
+        document.getElementById("ccC");
+        let password = ("1234");
+        let inpt1 = 
+        document.getElementById("inpt1")
+
+
+        btn1.onclick = function(){
+            if (inpt1.value === password){
+                cC.textContent = "The password is correct!";
+                cC.style.color = "green";
+            }
+            else{
+                cC.textContent = "The password is Wrong!";
+                cC.style.color = "red";
+            }
+        }
+
+    
+</script>
+
+
+</body>
+
+</html>
